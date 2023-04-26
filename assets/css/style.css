@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  position: relative;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --heder-bg-color: #fefefe;
+  --button-border-color: #00000022;
+}
+
+.f_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f_column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f_between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  border: 1px solid var(--button-border-color);
+  outline: 0;
+  background-color: transparent;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 500ms all ease-in;
+}
+
+button:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  transition: 500ms all ease-in;
+}
+
+.header__top {
+  padding: 10px 0;
+  color: var(--bg-color);
+
+  font-size: 0.7rem;
+  position: relative;
+}
+
+.header__top::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 80px;
+  background: url("../css/image/h_bg.jpg");
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-position: center center;
+}
+
+.header__top ul li:not(:last-child) {
+  padding-right: 1rem;
+}
+
+.header {
+  padding: 30px 0;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  background-color: var(--heder-bg-color);
+  position: relative;
+  min-height: 80vh;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.header nav li {
+  padding: 0 20px;
+  font-weight: 600;
+}
+
+.btn-language {
+  border-radius: 50%;
+  font-weight: 500;
+  margin-right: 15px;
+  padding: 13px;
+  font-size: 0.8rem;
+}
+
+.small__title {
+  background-color: #f7f4ff;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 5px;
+  font-weight: 500;
+  color: #5842bc;
+}
+
+.header__content {
+  padding: 30px 0;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.header__content h5 {
+  font-size: 2.3rem;
+  font-weight: 600;
+  line-height: 1.3;
+  text-transform: capitalize;
+  margin: 20px 0;
+}
+
+.header__content h5 span {
+   
+  background: linear-gradient(to right, #6a3093, #a044ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header__content p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.header__img {
+   border: 1px solid red;
+   height: 100%;
+}
+
+.header__img img {
+    width: 200px;
+    height: 200px;
+}
+
+.c-btn {
+  background: linear-gradient(to right, #6a3093, #a044ff);
+  color: var(--bg-color);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  margin-right: 15px;
+}
+
+@keyframes hareket {
+    0% {
+      transform: translateX(0); /* Başlangıçta X ekseninde kayma yok */
+    }
+    50% {
+      transform: translateX(100px); /* Yarıda X ekseninde 100px sağa kayma */
+    }
+    100% {
+      transform: translateX(0); /* Sonunda X ekseninde kayma yok */
+    }
+  }
+  
+  /* Animasyonu uygulayacağınız elemanın stil tanımı */
+  .kutu {
+    position: absolute;
+    width: 50px; /* Kutu genişliği */
+    height: 50px; /* Kutu yüksekliği */
+    background-color: blue; /* Kutu arkaplan rengi */
+    animation-name: hareket; /* Kullanılacak animasyonun adı */
+    animation-duration: 2s; /* Animasyon süresi */
+    animation-timing-function: ease; /* Animasyon zamanlama fonksiyonu */
+    animation-iteration-count: infinite; /* Animasyon tekrar sayısı */
+  }
+  
