@@ -155,11 +155,11 @@ button:hover {
   height: 400px;
   border-radius: 50%;
   animation-name: hareketY;
-  /* Kullanılacak animasyonun adı */
+  
   animation-duration: 6s;
-  /* Animasyon süresi */
+
   animation-timing-function: ease;
-  /* Animasyon zamanlama fonksiyonu */
+  
   animation-iteration-count: infinite;
 }
 
